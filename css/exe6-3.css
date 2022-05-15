@@ -1,0 +1,517 @@
+body, ul, li{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.navigation {
+    z-index: 10;
+    width: 100%;
+    height: 44px;
+    background-color: rgb(49,49,50);
+    position: fixed;
+    padding: 0 22px;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul.navigation_ul {      
+    font-size: 12px;
+    width: 65%;
+    margin-left: 15%;
+    padding: 0 -15px;
+    height: 44px;
+    list-style: none;
+    display: flex;
+    justify-content: space-around; 
+    text-align: center;
+}
+
+li.navigation_ul_li {
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+    line-height: 44px;
+    margin: 0 8px;
+    white-space: nowrap;
+    width: auto;
+}
+
+li.navigation_ul_li a {
+    color: rgb(214,214,214);
+}
+
+li.navigation_ul_li > .bag_content {
+    border: solid rgb(210,210,215);
+    z-index: 15;
+    width: 288px;
+    height: 319px;
+    background-color: white;
+    position: absolute;
+    top: 49px;
+    margin-left: -7%;
+    border-radius: 25px;
+    visibility: hidden;
+}
+
+.bag_content::before {
+    position: relative;
+    content: "";
+    height: 0px;
+    width: 0px;
+    border-top: 9px solid transparent;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid rgb(210,210,215);
+    top: -39px;
+    margin-left: -19px; 
+}
+
+.bag_content::after {
+    position: relative;
+    content: "";
+    height: 0px;
+    width: 0px;
+    border-top: 8px solid transparent;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid white;
+    top: -388px;
+    margin-left: -19px; 
+}
+
+p.remind {
+    position: relative;
+    top: -70px;
+    margin: 0;
+    padding-top: 35px;
+    padding-bottom: 23px;
+    text-align: center;
+    color: rgb(110,110,115);
+    font-size: 13px;
+    box-sizing: border-box;
+    height: 85px;
+    line-height: 85px;
+    width: 290px;
+}
+
+ul.remind_content {
+    width: 85%;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+    top: -40px;
+}
+
+ul.remind_content > li {
+    padding: 0;
+    height: 43.5px;
+    width: 100%;
+    border-top: 1px solid rgb(210,210,215);
+    text-align: left;
+}
+
+ul.remind_content > li > span {
+    width: 100%;
+    height: 43.5px;
+    /* position: relative; */
+    
+}
+
+ul.remind_content > li > span > i {
+    color: rgb(26,118,209);
+}
+
+ul.remind_content > li > span >a {
+    font-size: 13px;
+    color: rgb(26,118,209);
+}
+
+/* 广告 */
+section.guanggao {
+    z-index: 8;
+    position: relative;
+    top: 44px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgb(245,245,247);
+    text-align: center;
+}
+
+section.guanggao a {
+    /* display: block; */
+    font-size: 14px;
+    color: rgb(38,124,211);
+}
+
+section.guanggao a:hover {
+    text-decoration: underline;
+}
+
+section.guanggao a::after {
+    content: ' ';
+    white-space: pre;
+}
+
+section.guanggao i {
+    color: rgb(38,124,211);
+    transform: rotate(45deg);
+}
+
+/* 中间的图片 */
+
+section.content {
+    display: grid;
+    position: relative;
+    grid-template-columns: (1 20px);
+    width: 100%;
+    height: 1930px;
+    /* align-items: center; */
+    justify-items: end;
+}
+
+a {
+    text-decoration: none;
+}
+
+section.content>a{
+    z-index: 6;
+}
+
+div.content-1 {
+    z-index: 2;
+    display: grid;
+    background: url(../../images/ipad.jpg) center;
+    height: 650px;
+    width: 100%;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+}
+
+div.content-1>h2{
+    position: relative;
+    top: 20px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+}
+
+div.content-1>h3{
+    position: relative;
+    top: -120px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+div.content-1 h2 a {
+    color: white;
+}
+
+div.content-1 h3 a {
+    color: white;
+}
+
+div.buy1 {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: -180px;
+    text-align: center;
+}
+
+div.buy a {
+    color: rgb(0,102,204);
+}
+
+div.buy a::after {
+    content: '  ';
+    white-space: pre;
+}
+
+div.buy a:hover {
+    text-decoration: underline;
+}
+
+
+div.content-2 {
+    z-index: 3;
+    /* z-index: 50; */
+    display: grid;
+    background: url(../../images/ipadair.png) center;
+    height: 736px;
+    width: 100%;
+    background-repeat: no-repeat;
+    margin-top: 30px;
+}
+
+div.content-2>h2 {
+    position: relative;
+    top: 60px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+}
+
+div.content-2>h3 {
+    position: relative;
+    top: -120px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+div.content-2 h2 a {
+    color: white;
+}
+
+div.content-2 h3 a {
+    color: white;
+}
+
+div.buy2 {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: -200px;
+    text-align: center;
+}
+
+div.content-3 {
+    z-index: 4;
+    /* z-index: 50; */
+    display: grid;
+    background: url(../../images/ipadMini.jpg) center;
+    height: 736px;
+    width: 100%;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+}
+
+div.content-3>h2 {
+    position: relative;
+    top: 60px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 48px;
+}
+
+div.content-3>h3 {
+    position: relative;
+    top: -120px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+
+div.content-3 h2 a {
+    color: white;
+}
+
+div.content-3 h3 a {
+    color: white;
+}
+
+div.buy3 {
+    display: block;
+    width: 100%;
+    position: relative;
+    top: -200px;
+    text-align: center;
+}
+
+section.Six_palace_lattice {
+    margin-top: 300px;
+    display: grid;
+    grid-template-columns: 49% 49%;
+    grid-template-rows: 624px 624px 624px;
+    grid-row-gap: 20px;
+    grid-column-gap: 20px;
+    justify-content: center;
+    align-content: center;
+}
+
+div.Six_palace_lattice_photo_1 {
+    display: grid;
+    background: url(../../images/apple_11.jpg);
+    background-size: 100% 100%;
+}
+
+div.link1 i {
+    transform: rotate(45deg);
+}
+
+div.Six_palace_lattice_photo_2 {
+    display: grid;
+    background: url(../../images/apple_2.jpg);
+    background-size: 100% 100%;
+}
+div.Six_palace_lattice_photo_3 {
+    display: grid;
+    background: url(../../images/apple_22.jpg);
+    background-size: 100% 100%;
+}
+div.Six_palace_lattice_photo_4 {
+    display: grid;
+    background: url(../../images/apple_4.jpg);
+    background-size: 100% 100%;
+}
+div.Six_palace_lattice_photo_5 {
+    display: grid;
+    background: url(../../images/apple_22.jpg);
+    background-size: 100% 100%;
+}
+div.Six_palace_lattice_photo_6 {
+    display: grid;
+    background: url(../../images/apple_33.jpg);
+    background-size: 100% 100%;
+}
+
+section.Six_palace_lattice div div {
+    position: relative;
+    text-align: center;
+}
+
+section.Six_palace_lattice div div a {
+    display: inline-block;
+    z-index: 10;
+    color: rgb(41,151,255);
+    font-size: 20px;
+    word-spacing: 5px;
+    margin-left: 15px;
+}
+
+section.Six_palace_lattice div div a:hover {
+    text-decoration: underline;
+}
+
+div.link1 {
+    top: 70%;
+}
+
+div.link2 {
+    top: -30%;
+}
+
+div.link3 {
+    top: -50%;
+}
+
+div.link4 {
+    top: -50%;
+}
+
+div.link5 {
+    top: 55%;
+}
+
+div.link6 {
+    top: 60%;
+}
+
+/* 底部栏 */
+
+.footer {
+    height: 618px;
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 18%;
+    padding-right: 18%;
+    background-color: rgb(245,245,247);
+}
+
+.tmp {
+    margin: 0 auto;
+    height: 50px;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgb(182, 179, 179);
+    font-size: 8.5px;
+    color: rgb(182, 179, 179);
+}
+
+.foot_div_list {
+    margin-top: 10px solid black;
+    border-top: 5px ;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.foot_div {
+    z-index: 20;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.foot_div_list ul li{
+    list-style: none;
+    white-space: nowrap;
+    margin-top: 5px;
+}
+
+.foot_div_list h3 {
+    font-size: 11px;
+    font-weight: bold;
+}
+
+.foot_div_list a {
+    font-size: 8.5px;
+    color: #424245;
+}
+
+.clear {
+    clear: both;
+}
+
+div.footer_call
+{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(182, 179, 179);
+}
+
+.foot_bottom div span{
+    font-size: 8.5px;
+    color: rgb(182, 179, 179);
+}
+.footer_call a{
+    color: blue;
+}
+
+.footer_links a {
+    color: black;
+}
+
+.footer_call a:hover{
+    text-decoration: underline;
+}
+
+.footer_links{
+    margin:7px 0;
+}
+
+.footer_links a::before{
+    content: '    ';
+    white-space: pre;
+    /* color: rgb(206, 204, 200); */
+}
+
+.footer_links a::after{
+    content: '   |  ';
+    color: rgb(206, 204, 200);
+    white-space: pre;
+}
+.footer_links a:hover{
+    text-decoration: underline;
+}

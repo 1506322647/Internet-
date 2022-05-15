@@ -1,0 +1,1539 @@
+div.ten_root {
+    width: 100%;
+    height: 5426.680px;
+}
+
+/* 页面中的回到顶部按钮设置开始 */
+div.ten_totop {
+    display: block;
+    cursor: pointer;
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    visibility: visible;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid blue;
+    bottom: -200px;
+    right: 3%;
+    text-align: center;
+    transition: all .5s;
+}
+
+div.ten_totop a i {
+    display: 60px;
+    line-height: 60px;
+    color: blue;
+    position: relative;
+    -webkit-text-stroke: 1px white;
+}
+
+/* 页面中的回到顶部按钮设置结束 */
+
+/* 页面中最上方浮动图片内容设置开始 */
+section.ten_topbanner {
+    position: relative;
+    width: 100%;
+    height: 722px;
+    overflow: hidden;
+}
+
+div.curtain {
+    cursor: pointer;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+}
+
+ul.ten_topbanner_ul {
+    cursor: pointer;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: absolute;
+    width: 400%;
+    height: 100%;
+    left: 0;
+    transition: .2s;
+}
+
+img.ten_topbanner_imgs {
+    width: 100%;
+    height: 100%;
+}
+
+.top_squares {
+    margin: 0;
+    padding: 0;
+    width: 8%;
+    /* height: 20px; */
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    user-select: none;
+    z-index: 4;
+    top: 74%;
+    right: 12%;
+}
+
+.top_square {
+    flex-grow:0;
+    flex-shrink:0;  
+    margin: 5px;
+    padding: 0;
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background-color: white;
+    transition: .5s;
+    border: solid 1px rgb(255,255,255);
+}
+
+.top_button {
+    z-index: 4;
+    width: 10%;
+    height: 20%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+    bottom: 9%;
+    left: 10%;
+}
+
+.top_button_right {
+    background-image: url("https://www.tencent.com/img/index/icon_arrow_r.png");
+}
+
+.top_button_left {
+    background-image: url("https://www.tencent.com/img/index/icon_arrow_r.png");
+    transform: scaleX(-1);
+}
+
+.top_button_left, .top_button_right {
+    cursor: pointer;
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left;
+    margin: 0px 24px 0px 0px;
+}
+
+
+
+@keyframes text_float {
+    from {
+        left: 30%;
+    }
+    to {
+        left: -13%;
+    }
+}
+
+.ten_topbanner_text {
+    cursor: pointer;
+    margin: 0 auto;
+    z-index: 4;
+    display: block;
+    position: relative;
+    top: -70%;
+    width: 53%;
+    height: 30%;
+    color: white;
+    left: -13%;
+    animation-name: text_float;
+    animation-duration: 0.5s;
+}
+
+.ten_topbanner_text > h2 {
+    font-size: 46px;
+    font-weight: 400;
+}
+
+.ten_topbanner_text > h5 {
+    font-size: 17px;
+    font-weight: 400;
+}
+
+/* 页面中最上方浮动图片内容设置结束 */
+
+/* 页面上方的主要内容设置开始 */
+
+.ten_topcontent {
+    width: 100%;
+    height: 2217.5px;
+    position: relative;
+    z-index: 1;
+    margin-top: -80px;
+}
+
+.ten_topcontent >.ten_main {
+    margin: 0 auto;
+    padding: 0;
+    width: 80%;
+    height: 100%;
+}
+
+.ten_main>h4 {
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -50px;
+    border-top: 1px solid white;
+    padding-top: 20px;
+}
+
+.ten_card_grid {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: -37px;
+}
+
+.ten_card_grid_son {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.ten_card_row1 {
+    height: 28%;
+}
+
+.ten_card_row2 {
+    height: 28%;
+}
+
+.ten_card_row3 {
+    height: 28%;
+}
+
+.ten_card_row4 {
+    height: 16%;
+}
+
+.ten_card_row1_img_1 {
+    width: 66%;
+    height: 100%;
+}
+
+.ten_card_row1_img_1>.ten_row_text {
+    width: 100%;
+    height: 34%;
+    z-index: 3;
+    position: relative;
+    margin-top: -206px;
+    background-color: white;
+    border-bottom: 1px white solid;
+}
+
+.ten_card_grid_son > div {
+    transition: all .2s;
+}
+
+.ten_card_grid_son > div:hover {
+    box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, .2); 
+    margin-top: -5px;
+    border: 1px solid #ccc;
+}
+
+.ten_row_img {
+    overflow: hidden;
+}
+
+.ten_row_img>a {
+    transition: all .3s;
+}
+
+.ten_row_img>a:hover {
+    transform: scale(1.1);
+}
+
+.ten_card_row1_img_2 {
+    width: 32%;
+    height: 100%;
+    background-color: black;
+}
+
+.ten_card_row1_img_2 > .ten_row_text {
+    width: 100%;
+    height: 55%;
+    position: relative;
+    background-color: rgb(0,169,206);
+}
+
+.ten_card_row1_img_2 > .ten_row_img {
+    width: 100%;
+    height: 45%;
+    border-bottom: 1px solid white;
+}
+
+.ten_card_row1_img_2>.ten_row_img>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.ten_card_row1_img_2>.ten_row_img>a>img {
+    width: 100%;
+    height: 100%;
+}
+
+.ten_card_row2 > div {
+    width: 32%;
+    height: 100%;
+    background-color: aqua;
+}
+
+.ten_card_row3_img_1 {
+    width: 66%;
+    height: 100%;
+}
+
+.ten_card_row3_img_1>.ten_row_text {
+    width: 100%;
+    height: 30%;
+    z-index: 3;
+    position: relative;
+    margin-top: -182px;
+    background-color: white;
+    border-bottom: 1px white solid;
+}
+
+.ten_card_row2 > div > .ten_row_img {
+    width: 100%;
+    height: 40%;
+    border-bottom: 1px solid white;
+    background-color: red;
+}
+
+.ten_card_row2 > div > .ten_row_text {
+    width: 100%;
+    height: 60%;
+}
+
+.ten_card_row2_img_1 > .ten_row_text{
+    background-color: rgb(0,82,217);
+}
+
+.ten_card_row2_img_2 > .ten_row_text{
+    background-color: rgb(255,255,255);
+}
+
+.ten_card_row2_img_3 > .ten_row_text{
+    background-color: rgb(216,215,223);
+}
+
+.ten_card_row3_img_2 > .ten_row_text {
+    background-color: rgb(0,82,217);
+}
+
+.ten_card_row2 > div >div > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.ten_card_row2 > div >div > a > img {
+    width: 100%;
+    height: 100%;
+}
+
+.ten_card_row3_img_2 {
+    width: 32%;
+    height: 100%;
+    background-color: aquamarine;
+}
+
+.ten_card_row3_img_2 >.ten_row_img {
+    width: 100%;
+    height: 45%;
+    border-bottom: 1px solid white;
+}
+
+.ten_card_row3_img_2 >.ten_row_img > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.ten_card_row3_img_2 >.ten_row_img > a >img{
+    width: 100%;
+    height: 100%;
+} 
+
+.ten_card_row4_img {
+    width: 66%;
+    height: 100%;
+}
+
+.ten_card_row4_mp4 {
+    width: 32%;
+    height: 100%;
+}
+
+.ten_card_row1_img_1 > .ten_row_img {
+    width: 100%;
+    height: 100%;
+}
+
+.ten_card_row1_img_1 > .ten_row_img>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.ten_card_row1_img_1 > .ten_row_img>a>img{
+    width: 100%;
+    height: 100%;
+}
+
+.ten_card_row3_img_1 > .ten_row_img {
+    width: 100%;
+    height: 100%;
+}
+
+.ten_card_row3_img_1 > .ten_row_img>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.ten_card_row3_img_1 > .ten_row_img>a>img{
+    width: 100%;
+    height: 100%;
+}
+
+.ten_card_row3_img_2 > .ten_row_img {
+    width: 100%;
+    height: 45%;
+}
+
+.ten_card_row3_img_2 > .ten_row_img>a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.ten_card_row3_img_2 > .ten_row_img>a>img{
+    width: 100%;
+    height: 100%;
+}
+
+.ten_card_row3_img_2 > .ten_row_text {
+    width: 100%;
+    height: 55%;
+}
+
+.ten_card_row4_img > .ten_row_img {
+    width: 100%;
+    height: 100%;
+}
+
+.ten_card_row4_img > .ten_row_img> a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.ten_card_row4_img > .ten_row_img>a>img{
+    width: 100%;
+    height: 100%;
+}
+
+.ten_row_video {
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.ten_row_video>a.ten_card_row4_img {
+    color: white;
+    position: relative;
+    top: -210px;
+    left: -40px;
+    width: 100%;
+    height: 100%;
+}
+
+.ten_row_video>a.ten_card_row4_img>h3 {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.ten_row_video > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ten_row_video > .mp4_icon {
+    position: relative;
+    top: 50px;
+}
+
+.video {
+    margin: 0;
+    padding: 0;
+    width: 379.383px;
+    height: 345.195px;
+    object-fit: fill;
+    opacity: 0;
+    position: absolute;
+    top: 1857px;
+    right: 1px;
+}
+
+.video:hover {
+    transition: all .3s;
+    box-shadow: 0px 10px 30px 5px rgba(0, 0, 0, .2); 
+    margin-top: -5px;
+    border: 1px solid #ccc;
+}
+
+
+
+.ten_card_row1_img_1 .ten_tagline {
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 24px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    border-top: 1px solid #0052D9;
+    padding: 0px 30px;
+    font-weight: bold;
+    color: #0052D9;
+    top: 30px;
+    font-style: italic;
+}
+
+.ten_card_row1_img_1 .ten_tagline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: calc(100% - 12px);
+    bottom: 0px;
+    width: 100%;
+    border-top: 1px solid #0052D9;
+    transform: rotate(-69deg) translate(-1px,0px);
+    transform-origin: 0px 0px;
+}
+
+.ten_card_row1_img_1 .ten_tagline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: calc(100% - 12px);
+    border-top: 1px solid #0052D9;
+}
+
+.ten_card_row1_img_2 .ten_tagline {
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 24px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    border-top: 1px solid white;
+    padding: 0px 30px;
+    font-weight: bold;
+    color: white;
+    top: 30%;
+    font-style: italic;
+}
+
+.ten_card_row1_img_2 .ten_tagline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: calc(100% - 12px);
+    bottom: 0px;
+    width: 100%;
+    border-top: 1px solid white;
+    transform: rotate(-69deg) translate(-1px,0px);
+    transform-origin: 0px 0px;
+}
+
+.ten_card_row1_img_2 .ten_tagline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: calc(100% - 12px);
+    border-top: 1px solid white;
+}
+
+.ten_card_row2_img_1 .ten_tagline {
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 24px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    border-top: 1px solid white;
+    padding: 0px 30px;
+    font-weight: bold;
+    color: white;
+    top: 8%;
+    font-style: italic;
+}
+
+.ten_card_row2_img_1 .ten_tagline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: calc(100% - 12px);
+    bottom: 0px;
+    width: 100%;
+    border-top: 1px solid white;
+    transform: rotate(-69deg) translate(-1px,0px);
+    transform-origin: 0px 0px;
+}
+
+.ten_card_row2_img_1 .ten_tagline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: calc(100% - 12px);
+    border-top: 1px solid white;
+}
+
+.ten_card_row2_img_2 .ten_tagline {
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 24px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    border-top: 1px solid #0052D9;
+    padding: 0px 30px;
+    font-weight: bold;
+    color: #0052D9;
+    top: 8%;
+    font-style: italic;
+}
+
+.ten_card_row2_img_2 .ten_tagline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: calc(100% - 12px);
+    bottom: 0px;
+    width: 100%;
+    border-top: 1px solid #0052D9;
+    transform: rotate(-69deg) translate(-1px,0px);
+    transform-origin: 0px 0px;
+}
+
+.ten_card_row2_img_2 .ten_tagline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: calc(100% - 12px);
+    border-top: 1px solid #0052D9;
+}
+
+.ten_card_row2_img_3 .ten_tagline {
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 24px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    border-top: 1px solid #0052D9;
+    padding: 0px 30px;
+    font-weight: bold;
+    color: #0052D9;
+    top: 8%;
+    font-style: italic;
+}
+
+.ten_card_row2_img_3 .ten_tagline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: calc(100% - 12px);
+    bottom: 0px;
+    width: 100%;
+    border-top: 1px solid #0052D9;
+    transform: rotate(-69deg) translate(-1px,0px);
+    transform-origin: 0px 0px;
+}
+
+.ten_card_row2_img_3 .ten_tagline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: calc(100% - 12px);
+    border-top: 1px solid #0052D9;
+}
+
+.ten_card_row3_img_1 .ten_tagline {
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 24px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    border-top: 1px solid #0052D9;
+    padding: 0px 30px;
+    font-weight: bold;
+    color: #0052D9;
+    top: 12%;
+    font-style: italic;
+}
+
+.ten_card_row3_img_1 .ten_tagline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: calc(100% - 12px);
+    bottom: 0px;
+    width: 100%;
+    border-top: 1px solid #0052D9;
+    transform: rotate(-69deg) translate(-1px,0px);
+    transform-origin: 0px 0px;
+}
+
+.ten_card_row3_img_1 .ten_tagline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: calc(100% - 12px);
+    border-top: 1px solid #0052D9;
+}
+
+.ten_card_row3_img_2 .ten_tagline {
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 24px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    border-top: 1px solid white;
+    padding: 0px 30px;
+    font-weight: bold;
+    color: white;
+    top: 30%;
+    font-style: italic;
+}
+
+.ten_card_row3_img_2 .ten_tagline::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: calc(100% - 12px);
+    bottom: 0px;
+    width: 100%;
+    border-top: 1px solid white;
+    transform: rotate(-69deg) translate(-1px,0px);
+    transform-origin: 0px 0px;
+}
+
+.ten_card_row3_img_2 .ten_tagline::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: calc(100% - 12px);
+    border-top: 1px solid white;
+}
+
+.ten_card_row1_img_1 .ten_row_text a{
+    color: black;
+}
+
+.ten_card_row1_img_1 .ten_row_text h3 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.ten_card_row1_img_1 .ten_row_text p {
+    margin-left: 30px;
+}
+
+.ten_card_row1_img_1 .ten_row_text a:hover h3 {
+    color: #0052D9;
+}
+
+.ten_card_row1_img_2 .ten_row_text a{
+    color: white;
+}
+
+.ten_card_row1_img_2 .ten_row_text h3 {
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 100px;
+    margin-left: 27px;
+    margin-right: 5px;
+}
+
+.ten_card_row1_img_2 .ten_row_text p {
+    margin-left: 27px;
+    margin-right: 20px;
+}
+
+.ten_card_row2 .ten_row_text a{
+    color: black;
+}
+
+.ten_card_row2_img_1 .ten_row_text a {
+    color: white;
+}
+
+.ten_card_row2 .ten_row_text h3 {
+    font-size: 23px;
+    font-weight: 400;
+    margin-top: 30px;
+    margin-left: 27px;
+    margin-right: 8px;
+}
+
+.ten_card_row2 .ten_row_text p {
+    margin-left: 27px;
+    margin-right: 20px;
+}
+
+.ten_card_row3_img_1 .ten_row_text a {
+    color: black;
+}
+
+.ten_card_row3_img_1 .ten_row_text h3 {
+    font-size: 23px;
+    font-weight: 400;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.ten_card_row3_img_1 .ten_row_text p {
+    margin-left: 30px;
+}
+
+.ten_card_row3_img_2 .ten_row_text{
+    color: white;
+}
+
+.ten_card_row3_img_2 .ten_row_text h3 {
+    font-size: 23px;
+    font-weight: 400;
+    margin-top: 120px;
+    margin-left: 25px;
+}
+
+.ten_card_row3_img_2 .ten_row_text p {
+    margin-left: 25px;
+    margin-right: 10px;
+}
+
+.ten_card_row4_img .ten_row_text {
+    z-index: 3;
+    position: absolute;
+}
+
+.ten_card_row4_img .ten_row_text a{
+    color: white;
+}
+
+.ten_card_row4_img .ten_row_text h3 {
+    font-size: 26px;
+    font-weight: 400;
+    margin-top: -240px;
+    margin-left: 70px;
+}
+
+.ten_card_row4_img .ten_row_text p {
+    margin-left: 70px;
+    color: white
+}
+
+.ten_card_row4_shadow {
+    z-index: 1;
+    width: 66%;
+    height: 15.6%;
+    position: absolute;
+    background-image: linear-gradient(to right,rgb(0,0,0,0.7),rgb(0,0,0,0));
+}
+
+.ten_card_row4_img:hover .ten_row_img a{
+    transform: scale(1.1);
+}
+
+.ten_row_video {
+    overflow: hidden;
+}
+
+.ten_row_video img {
+    transition: all .3s;
+}
+
+.ten_row_video:hover img {
+    transform: scale(1.1);
+}
+
+.ten_img_play {
+    display: block;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: -270px;
+    margin: 0 auto;
+    /* color: #0052D9; */
+}
+
+.circle {
+    width: 70%;
+    height: 70%;
+    border-radius: 50%;
+    margin: 0 auto;
+    background-color: #0052D9;
+    transition: all .3s;
+}
+
+.triangle {
+    position: relative;
+    top: -45px;
+    right: -47px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid white; 
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transition: all .3s;   
+}
+
+.ten_card_row4_mp4:hover .circle {
+    background-color: white;
+}
+
+.ten_card_row4_mp4:hover .triangle {
+    border-left-color: #0052D9;
+}
+
+
+/* 页面上方的主要内容设置结束 */
+
+/* 页面中间三个浮动图片内容设置开始 */
+section.ten_main_sec {
+    width: 100%;
+    height: 340.375px;
+    background-color: white;
+}
+
+div.ten_main {
+    margin: 0 auto ;
+    width: 82%;
+    padding-top: 72px;
+    padding-bottom: 48px;
+    box-sizing: border-box;
+}
+
+div.ten_links {
+    box-sizing: border-box;
+    display: flex;
+    align-content: center;
+    justify-content: space-around; 
+    height: 236.735px;
+}
+
+div.ten_links div.div_img {
+    overflow: hidden;
+}
+
+div.ten_links a img{
+    display: block;
+    transition: 0.5s all ease-in-out;
+    height: 230.375px;
+    width: 370px;
+}
+
+a.ten_img:hover img {
+    transform: scale(1.1);
+}
+
+div.backblue {
+    position: absolute;
+    height: 230.375px;
+    width: 370px;
+    visibility: hidden;
+}
+
+div.ten_img_txt {
+    position: relative;
+    top: -108%;
+    text-align: center;
+    height: 230.375px;
+    line-height: 230.375px;
+}
+
+div.ten_img_txt > h2 {
+    z-index: 3;
+    position: relative;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing:5px;
+}
+
+div.underline {
+    width: 0;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    top: 62%;
+    left: 30%;
+    transition: all 0.5s;
+}
+
+a.ten_img:hover div.backblue{
+    z-index: 2;
+    visibility: visible;
+    background-color: blue;
+    opacity: 0.6;
+}
+
+a.ten_img:hover div.underline {
+    z-index: 3;
+    left: 30%;
+    width: 40%;
+}
+/* 页面中间三个浮动图片内容设置结束 */
+
+/* 页面中黑色背景内容设置开始 */
+div.ten_bg_dark {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(27,31,37);
+}
+
+div.ten_home {
+    width: 84%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.ten_home_l {
+    width: 30%;
+    height: 67%;
+    padding-bottom: 50px;
+}
+
+div.ten_home_l a {
+    letter-spacing: 1px;
+    color: rgb(141,143,146);
+    display: block;
+    width: 100%;
+    height: 33.3%;
+    font-style: italic;
+    transition: ease-out .3s;
+    position: relative;
+    left: -20px;
+}
+
+div.ten_home_l a h2,div.ten_home_l a p {
+    transition: ease all 0.1s;
+    position: relative;
+}
+
+.ten_home_l a h2 {
+    font-size: 34px;
+}
+
+.ten_home_cont {
+    margin: 5px 5px 0 5px;
+    font-size: 17px;
+}
+
+.ten_home_icon {
+    /* -webkit-text-stroke: 4px rgb(27,31,37); */
+    width: 54px;
+    height: 30px;
+    visibility: hidden;
+    /* transition: ease-in-out .1s; */
+    background-image: url("https://www.tencent.com/img/index/icon_arrow_r.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.h2_text_before {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: -24px;
+    height: 100%;
+    width: 6px;
+    background: blue;
+    transition: ease all 0.3s;
+}
+
+.h2_pre {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: -24px;
+    height: 30%;
+    width: 6px;
+    background: blue;
+    transition: ease all 0.3s;
+}
+
+.ten_home_l_text:hover .h2_pre{
+    display: block;
+}
+
+div.ten_home_r {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+div.ten_home_r_div{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+}
+
+div.ten_home_r_div:nth-child(1) {
+    order: 1;
+    visibility: visible;
+}
+
+div.ten_home_r_div:nth-child(2) {
+    order: 1;
+    visibility: hidden;
+}
+
+div.ten_home_r_div:nth-child(3) {
+    order: 1;
+    visibility: hidden;
+}
+
+.ten_home_r_img {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.img_shadow {
+    background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 75%, rgba(0,0,0,0) 100%);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.ten_div1>div {
+    width: 50%;
+    height: 50%;
+}
+
+.ten_div2>div:nth-child(1) {
+    width: 50%;
+    height: 50%;
+}
+
+.ten_div2>div:nth-child(2) {
+    width: 50%;
+    height: 50%;
+}
+
+.ten_div2>div:nth-child(3) {
+    width: 100%;
+    height: 50%;
+}
+
+.ten_div3>div {
+    width: 50%;
+    height: 50%;
+}
+
+.ten_home_r_text {
+    display: block;
+    color: white;
+    width: 90%;
+    height: 20%;
+    position: relative;
+    top: -120px;
+    left: 20px;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+.ten_home_r_text h3 {
+    font-size: 23px;
+}
+
+.ten_home_r_text p {
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+@keyframes icon_hover {
+    from{
+        top:calc(50% - 0px);
+    }
+    to{
+        top:calc(50% - 28px);
+    }
+}
+
+.ten_home_r_img:hover h3::after {
+    content: "";
+    position: absolute;
+    width: 36px;
+    height: 24px;
+    top: calc(50% - 28px);
+    right: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left;
+    animation-name: icon_hover;
+    animation-duration: .3s;
+    background-image: url("../images/icon_arrow_r.png");
+}
+
+/* 页面中黑色背景内容设置结束 */
+
+/* 页面中下方第一个轮播图设置开始 */
+section.ten_subbanner--type1 {
+    width: 100%;
+    height: 750px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.type1_content {
+    width: 80%;
+    height: 80%;
+    margin: 0 24px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+div.type1_content_imgs{ 
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 100%;
+    clip-path: polygon(0% 0%,0% 100%,90% 100%,100% 0%);
+    overflow: hidden;
+}
+
+@keyframes breath {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+ul.type1_imgs_ul {
+    z-index: 5;
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 400%;
+    height: 100%;
+    /* animation-name: breath;
+    animation-duration: .2s;
+    animation-timing-function: ease-in-out; */
+}
+
+ul.type1_imgs_ul>li.type1_imgs {
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+
+}
+
+li.type1_imgs:nth-child(1){
+    width: 25%;
+    background: no-repeat center top / 100% 100%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url("../images/index_resp_bg0.png");
+    background-size: cover;
+}
+
+li.type1_imgs:nth-child(2){
+    width: 25%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url("../images/index_resp_bg1.jpg");
+    background-size: cover;
+}
+
+li.type1_imgs:nth-child(3){
+    width: 25%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url("../images/index_resp_bg2.jpg");
+    background-size: cover;
+}
+
+li.type1_imgs:nth-child(4){
+    width: 25%;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0)), url("../images/index_resp_bg3.jpg");
+    background-size: cover;
+}
+
+a.type1_text {
+    display: block;
+    width: 80%;
+    margin: 40px;
+    position: relative;
+    bottom: -65%;
+    color: white;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+a.type1_text h3 {
+    font-size: 25px;
+    /* font-weight: ; */
+}
+
+div.type1_button0 {
+    z-index: 5;
+    width: 20%;
+    position: relative;
+    display: flex;
+    bottom: -85%;
+    left: 70%;
+    font-size: 40px;
+    color: white;
+    user-select: none;
+    opacity: 0;
+}
+
+div.type1_button0 div {
+    cursor: pointer;
+    padding: 20px;
+}
+
+div.type1_button {
+    position: relative;
+    left: 5%;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 30%;
+    cursor: pointer;
+}
+
+div.type1_button h2 {
+    color: black;
+}
+
+div.type1_button h5 {
+    color: black;
+}
+
+div.type1_button p {
+    color: black;
+}
+
+div.type1_button a h2 {
+    margin: 15px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 550;
+    letter-spacing: 3px;
+}
+
+div.type1_button a h5 {
+    margin: 15px;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+div.type1_button a p {
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("https://www.tencent.com/img/index/icon_arrow_r_dark.png");
+    margin: 0px 0px 0px 15px;
+}
+
+/* 页面中下方第一个轮播图设置结束 */
+
+/* 页面最下方的轮播图内容设置开始 */
+section.ten_subbanner--type2 {
+    margin: 0;
+    width: 100%;
+    height: 776.305px;
+    position: relative;
+    overflow: hidden;
+}
+
+ul.type2_imgs_ul {
+    padding: 0;
+    margin: 0;
+    width: 300%;
+    height: 776.305px;
+    left: 0;
+    display: flex;
+    position: absolute;
+    transition: .5s;
+}
+
+li.type2_imgs {
+    background-size: cover;
+    width: 100%;
+}
+
+li.type2_imgs:nth-child(1) {
+    background-image: url(../images/index_develop_bg1.jpg);
+}
+
+li.type2_imgs:nth-child(2) {
+    background-image: url(../images/index_develop_bg2.jpg);
+}
+
+li.type2_imgs:nth-child(3) {
+    background-image: url(../images/index_develop_bg3.jpg);
+}
+
+ul.min_square {
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    bottom: 20px;
+    width: 7%;
+    z-index: 2;
+    right: 3%;
+}
+
+li.square {
+    width: 10px;
+    height: 10px;
+    cursor: pointer;
+    background-color: white;
+    transition: .5s;
+}
+
+.type2_button {
+    width: 10%;
+    height: 20%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+    bottom: -10%;
+    left: 7%;
+}
+
+.type2_button_right {
+    background-image: url("https://www.tencent.com/img/index/icon_arrow_r.png");
+}
+
+.type2_button_left {
+    background-image: url("https://www.tencent.com/img/index/icon_arrow_r.png");
+    transform: scaleX(-1);
+}
+
+.type2_button_left, .type2_button_right {
+    cursor: pointer;
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center left;
+    margin: 0px 24px 0px 0px;
+}
+
+div.type2_txt {
+    z-index: 2;
+    position: absolute;
+    left: 7%;
+    margin: 0 auto;
+    width: 80%;
+    margin: 99px 0;
+}
+
+div.type2_txt h2 {
+    font-size: 44px;
+    font-style: italic;
+    letter-spacing: 2px;
+    color: rgb(43,46,46);
+    cursor: pointer;
+    font-weight: 550;
+    /* margin: 0; */
+}
+
+div.type2_txt h2:hover {
+    color: rgb(0,82,217);
+}
+
+div.type2_txt h5 {
+    color: rgb(61,65,66);
+    font-size: 18px;
+    font-style: italic;
+    letter-spacing: 3px;
+    font-weight: lighter;
+    cursor: pointer;
+    margin: -10px 0px 10px 0px;
+}
+
+div.type2_txt p {
+    position: relative;
+    display: inline-block;
+    width: 48px;
+    height: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("https://www.tencent.com/img/index/icon_arrow_r_dark.png");
+}
+
+/* 页面最下方的轮播图内容设置结束 */

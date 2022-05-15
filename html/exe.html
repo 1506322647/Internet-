@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>addEventListener</title>
+    <script type="text/javascript" src="js/jquery-3.0.0.js"></script>
+    <style type="text/css">
+        #content{
+            width: 100px;
+            height: 100px;
+            background: #f9f;
+        }
+    </style>
+</head>
+<body>
+    <div id="content"></div>
+    <script type="text/javascript">
+        //addEventListener 用于向指定元素添加事件句柄
+        //可以向一个元素添加多次点击事件，后一个点击事件不会覆盖前一个点击事件
+ 
+        var content = document.getElementById("content");
+        content.addEventListener("click",function(){
+            
+            console.log("11");
+        },false)
+        content.addEventListener("click",function(){
+            
+            console.log("22");
+        },false)
+        content.addEventListener("mouseover",add,false);
+        function add(){
+            console.log("成哥没我帅");
+        }
+        //由于成哥并不这么认为，一再用自身的权势让我更改这个事实，所以下面我需要再移出这个事件
+        // content.removeEventListener("mouseover",add,false);
+    </script>
+</body>

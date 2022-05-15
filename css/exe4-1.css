@@ -1,0 +1,36 @@
+div.menu {
+    margin: 0 auto;
+    height: 700px;
+    /* line-height: 900px; */
+    width: 500px;
+    position: relative;
+    /* top: 300px; */
+}
+
+/* div div { */
+    /* position: fixed; */
+/* } */
+
+p.content {
+    height: 0;
+    overflow: hidden;
+    margin: 10px auto;
+}
+
+a.aname {
+    text-decoration: none;
+    color: white;
+    display: block;
+    background-color: rgb(143, 143, 143);
+    /* position: relative; */
+}
+
+a.aname:hover {
+    background-color: blue;
+}
+
+.menu :target a+p {
+    height: 100px;
+    overflow: auto;
+    transition: all 0.2s ease-in-out;
+}

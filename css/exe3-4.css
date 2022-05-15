@@ -1,0 +1,59 @@
+.movieBar {
+    width: 700px;
+    height: 1000px;
+}
+
+li {
+    float: left;
+    list-style: none;
+    padding: 2px;
+}
+
+div.frame {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+div.movieName {
+    top:70%;
+    position: absolute;
+    text-align: left;
+    line-height: 5px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+p.txt {
+    width: 200px;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    position: absolute;
+    float: left;
+    top: 55%;
+    clear: both;
+}
+
+a.fblue {
+    text-decoration: none;
+}
+
+a.fblue:link {
+    color: black;
+}
+
+a.fblue:visited {
+    color: aqua;
+}
+
+a.fblue:hover {
+    color:brown;
+}
+
+a.fblue:active {
+    color: chocolate;
+}

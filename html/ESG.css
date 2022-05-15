@@ -1,0 +1,393 @@
+div {
+    margin: 0;
+    padding: 0;
+}
+
+a.lang_kind:hover {
+    color: rgb(43,46,46) !important;
+}
+
+div.content {
+    width: 100%;
+    height: 5450px;
+}
+
+div.ten_totop {
+    display: block;
+    cursor: pointer;
+    z-index: 100;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid blue;
+    right: 3%;
+    text-align: center;
+    bottom: -200px;
+    transition: all .5s;
+}
+
+div.ten_totop a i {
+    display: 60px;
+    line-height: 60px;
+    color: blue;
+    position: relative;
+    -webkit-text-stroke: 1px white;
+}
+
+.mod-section-ad {
+    position: relative;
+    width: 100%;
+    height: 9%;
+    background: url('https://www.tencent.com/img/esg/esg-banner.jpg') no-repeat top;
+    background-size: cover;
+    top: 72px;
+    color: white;
+    text-align: left;
+    overflow: hidden;
+}
+
+.mod-section-ad h2 {
+    position: relative;
+    top: 42%;
+    left: 10%;
+    font-size: 44px;
+    font-style: italic;
+    font-weight: 300;
+    width: 500px;
+    margin: 0;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.mod-section-ad p {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 42%;
+    left: 10%;
+    letter-spacing: 2px;
+}
+
+.mod-nav {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    margin-top: -20px;
+    position: relative;
+    top: 72px;
+    border-bottom: 1px solid rgb(244,244,244);
+    z-index: 4;
+}
+
+.mod-nav-ul {
+    list-style-type: none;
+    width: 70%;
+    height: 70%;
+    line-height: 50%;
+    margin-left: 43px;
+}
+
+.mod-nav-ul li {
+    display: inline-block;
+    padding-left: 68px;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(50%);
+    cursor: pointer;
+}
+
+.mod-nav-ul li a {
+    color: #5F6464;
+}
+
+.mod-content {
+    position: relative;
+    width: 100%;
+    height: 80%;
+    top: 72px;
+}
+
+.line {
+    width: 32px;
+    height: 2px;
+    position: absolute;
+    left: 151px;
+    bottom: 0;
+    background: #0052d9;
+    transition: all .2s;
+}
+
+.white-bg {
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    background-color: white;
+    
+}
+
+.white-bg-div {
+    width: 80%;
+    margin: 0 auto;
+    vertical-align: middle;
+}
+
+.white-bg .white-bg-div {
+    width: 100%;
+    height: 260px;
+    padding: 96px 0;
+    overflow: hidden;
+}
+
+.white-bg-title {
+    width: 64%;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 520;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-bottom: 70px;
+    margin: 0 auto;
+    line-height: 60px;
+}
+
+.white-bg-text {
+    width: 80%;
+    text-align: right;
+    margin-left: 154px;
+}
+
+.quote-person {
+    font-size: 20px;
+    text-align: right;
+    font-style: italic;
+    font-weight: 380;
+    letter-spacing: 2px;    
+}
+
+.white-bg-title q::before {
+    content: open-quote;
+    font-weight: bold;
+    font-size: 64px;
+    color: #889c0b;
+}
+
+.white-bg-title q::after {
+    content: close-quote;
+    font-weight: bold;
+    font-size: 64px;
+    color: #889c0b;
+    vertical-align: top;
+}
+
+.environment {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(251,251,251);
+}
+
+.environment .article-box {
+    position: relative;
+    display: block;
+    width: 1188px;
+    height: 570px;
+    background: url("https://www.tencent.com/img/esg/environment-bg-1.jpg") no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    top: 70px;
+}
+
+.text-box {
+    width: 30%;
+    height: 450px;
+    background-color: #FFFFFF;
+    opacity: 0.8;
+    position: relative;
+    top: 44px;
+    text-align: left;
+    padding: 40px 88px 0px 88px;
+}
+
+.text-box h3 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    font-style: italic;
+    font-weight: 440;
+    color: #2A2E2E;
+    margin-bottom: 50px;
+}
+
+.text-box p {
+    color: black;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.go-icon img {
+    width: 40px;
+    height: 15px;
+}
+
+.society {
+    width: 100%;
+    height: 700px;
+    background-color: white;
+}
+
+.society .article-box {
+    position: relative;
+    display: block;
+    width: 1188px;
+    height: 570px;
+    background: url("https://www.tencent.com/img/esg/tech-for-good-bg.jpg") no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    top: 70px;
+}
+
+.govern {
+    width: 100%;
+    height: 700px;
+    background-color: rgb(251,251,251);
+}
+
+.govern .article-box {
+    position: relative;
+    display: block;
+    width: 1188px;
+    height: 570px;
+    background: url("	https://www.tencent.com/img/esg/esg-govern-bg.jpg") no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    top: 70px;
+}
+
+.ESG_grade {
+    width: 100%;
+    height: 450px;
+    background-color: rgb(251,251,251);
+    padding: 96px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mod-m-title {
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 450;
+}
+
+.ten_esg_icon {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 24px;
+    background: #194AC3;
+    background-size: 18px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.ten_esg_icon {
+    background-image: url("https://www.tencent.com/img/stats.png");
+}
+
+.ten_esg {
+    width: 70%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+
+.ten_esg .ten_esg_bar {
+    text-align: left;
+    justify-self: flex-end;
+    width: 25%;
+    position: relative;
+    padding: 0px 0px 20px 0px;
+    max-width: 300px;
+    margin-right: 25%;
+    margin-left: auto;
+    color: #194AC3;
+    font-size: 19px;
+}
+
+.ten_esg_name {
+    color: black;
+}
+
+.ten_esg_bar .ten_esg_name {
+    font-size: 12px;
+}
+
+.ten_esg .ten_esg_name span {
+    text-align: left;
+    font-size: 12px;
+    color: #5f6464;
+    display: block;
+}
+
+.mod-report {
+    width: 100%;
+    height: 1400px;
+}
+
+.link-box a {
+    display:  block;
+    width: 80%;
+    height: 430px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.pc-box {
+    width: 100%;
+    height: 100%;
+}
+
+.mess {
+    position: relative;
+    top: -300px;
+    left: 90px;
+}
+
+.mess h2,.mess p.desc {
+    color: black;
+}
+
+.mess h2 {
+    font-size: 30px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.desc {
+    font-size: 16px;
+}
+
+.go-link {
+    display: flex;
+}
+
+.go-link p {
+    color:rgb(0,82,217);
+}
+
+.mod-report .go-icon img {
+    width: 23px;
+    height: 15px;
+    color: blue;
+    margin-top: 19px;
+    margin-left: 6px;
+}
+
+.report {
+    margin-top: 80px;
+}

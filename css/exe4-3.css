@@ -1,0 +1,68 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-image: url(../images/scenery-6.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.photo {
+    /* display: table-cell;
+    vertical-align: middle; */
+    text-align: center;
+}
+
+div.photo-wall {
+    position: relative;
+    background-color: antiquewhite;
+    /* text-align: center; */
+    width: 300px;
+    height: 230px;
+    margin: 10px;
+    display: inline-block;
+    top: 250px;
+}
+
+img {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 300px;
+    height: 200px;
+    border-radius: 75%;
+}
+
+p {
+    position:relative;
+    text-align: center;
+    top: -15px;
+    /* height: 30px;
+    line-height: 30px; */
+    text-shadow: 5px 5px #558ABB;
+}
+
+div.a {
+    transform: rotate(-30deg);
+    scale: (2,0.5);
+}
+
+div.b {
+    /* transform: rotate(30deg); */
+    transform: skew(15deg,15deg);
+}
+
+div.c {
+    /* transform: rotate(-30deg); */
+    transform: skew(-15deg,-15deg);
+}
+
+div.d {
+    transform: rotate(30deg);
+}
+
+div.photo div:hover {
+    width: 500px;
+    transition: all 3s;
+    transform: rotate(180deg);
+}

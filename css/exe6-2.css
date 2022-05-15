@@ -1,0 +1,51 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/scenery-1.jpg);
+    background-repeat: no-repeat;    
+    background-size: cover;
+    /* 好神奇，有了下面这句话就能铺满 */
+    background-attachment: fixed;  
+}
+
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.Button {
+    width: 100%;
+    height: 20%;
+}
+
+.changeSkin {
+    margin-top: 5%;
+    margin-left: 15%;
+    cursor: pointer;
+}
+
+.setting {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    /* display: none; */
+}
+
+.chooseImgs > img {
+    width: 150px;
+    height: 80px;
+    cursor: pointer;
+}
+
+.chooseImgs {
+    margin: 0;
+    width: 1000px;
+    height: 200px;
+    left: 50%;
+    margin-left: -500px;
+    position: absolute;
+    text-align: center;
+    line-height: 200px;
+    top: -200px;
+    transition: top 0.5s;
+}

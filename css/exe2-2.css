@@ -1,0 +1,61 @@
+div.logo {
+    background-color: rgba(10,67,94);
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    background-color: rgba(237,237,237);
+}
+
+a {
+    text-decoration: none;
+    color: #0000FF;
+}
+
+p {
+    text-indent: 1.75em;
+    line-height: 1.4em;
+}
+
+ul > li {
+    list-style-type: none;
+}
+
+.logo > h3 {
+    color: red;
+    letter-spacing: 0.5cm;
+    word-spacing: 0.05cm;
+}
+
+div.contentarea > h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: larger;
+    /* color:aqua */
+}
+
+div.contentarea > span {
+    color:red;
+}
+
+p a {
+    color: blue;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+div.navigation ul li{
+    width: 50%;
+    line-height: 40px;
+    color:white;
+    background-color: rgba(10,67,94);
+}
+
+div.navigation i{
+    color: red;
+}
+
+div.homepagefooter p {
+    text-align: center;
+}

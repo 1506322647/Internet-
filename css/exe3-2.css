@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.table {
+    background-color: black;
+    color:aliceblue;
+    width: 800px;
+    height: 500px;
+    padding: 0px;
+}
+
+.table-detail {
+    font-size: 0;
+    float: left;
+    padding: 0;
+}
+
+li {
+    font-size: 16px;
+    display: inline-block;
+    width: 70px;
+    height: 20px;
+    border: solid 1px white;
+    text-align: center;
+    background-color: brown;
+}
+
+.listH {
+    background-color: burlywood;
+}
